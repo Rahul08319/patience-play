@@ -23,3 +23,9 @@ Original prompt: Add all applicable YouTube Playables SDK requirements to https:
 - Updated the main menu with a glass-and-depth visual treatment and a tactile primary action.
 - The curated skill catalog has no Apple-design skill to install; the visual approach follows Apple-inspired design principles directly instead.
 - Final production build completed successfully after the responsiveness/pause polish.
+
+2026-09-27
+- User clarified this repository is a game, so the root app now mounts `TapOrWaitGame` directly without site routing or generic toast/query wrappers.
+- Replaced leftover Lovable website preview metadata with game-specific title and sharing text.
+- Production build succeeds (35 modules; 187.36 kB JavaScript before gzip). Vitest passes all 7 tests.
+- The prescribed Playwright game client remains unavailable because its `playwright` package is not installed in this workspace; no dependency was added solely for this root-shell cleanup.
